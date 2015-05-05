@@ -14,6 +14,23 @@
 </head>
 
 <body data-spy="scroll" data-target="#topnav">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="like-box">
+    <div class="outside">
+        <div class="inside">
+            <div class="fb-page" data-href="https://www.facebook.com/OtwartaPlatformaWyborcza" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/OtwartaPlatformaWyborcza"><a href="https://www.facebook.com/OtwartaPlatformaWyborcza">Otwarta Platforma Wyborcza</a></blockquote></div></div>
+        </div>
+    </div>
+    <div class="belt"><img style="max-width:100%" src="images/fb.png" alt="f"></div>
+</div>
 
 <div class="navbar navbar-default navbar-fixed-top" id="topnav">
     <div class="container">
@@ -49,10 +66,9 @@
             <div class="media-body">
                 <div class="col-md-11">
                     <h1 class="title">Otwarta Platforma Wyborcza</h1>
-
-                    <p>Otwarta Platforma Wyborcza (OPW) to oprogramowanie klasy enterprise, którego podstawowym zadaniem jest niezależna i obiektywna weryfikacja wyników wyborów prezydenckich 2015.</p>
+                    <p>stanowimy <strong>inicjatywę obywatelską</strong> która postawiła sobie za cel, stworzenie systemu informatycznego umożliwiającego niezależną jak i obiektywną weryfikację wyników wyborów.<br> To <strong>niedochodowy</strong> i <strong>niezaangażowany politycznie</strong> projekt obywatelski.</p>
                 </div>
-                    <p class="text-center"><a class="btn btn-success btn-lg">
+                    <p class="text-center"><a href="#howTo" class="btn btn-success btn-lg">
                         Dowiedz się więcej<br><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                     </a></p>
             </div>
@@ -69,7 +85,7 @@
                 <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                 <h2>Przygotowania</h2>
                 <p>Zbieramy grupę ok. 20 000 wolontariuszy i przygotowujemy im konta w naszym systemie.</p>
-                <a class="btn btn-default disabled">Zostań wolontariuszem</a>
+                <a class="btn btn-success" href="http://goo.gl/forms/YiBO6Irx2j" target="_blank">Zostań wolontariuszem</a>
             </div>
         </div>
         <div class="col-lg-4 text-center">
@@ -84,7 +100,7 @@
                 <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
                 <h2>Prezentacja wyników</h2>
                 <p>Dane od wolontariuszy przetworzymy na serwerze i na bieżąco będziemy udostępniać wyniki w Internecie.</p>
-                <a class="btn btn-default disabled">Zobacz panel wyników</a>
+                <a class="btn btn-success disabled">Zobacz panel wyników</a>
             </div>
         </div>
     </div>
@@ -118,27 +134,29 @@
             </p>
             <ul class="lead">
                 <li>Programiści Java EE</li>
-                <li>JS: Angular i jQuery</li>
-                <li>...</li>
+                <li>Programiści JS, Angular i jQuery</li>
+                <li>Analitycy znający się na organizacji i przeprowadzaniu wyborów</li>
             </ul>
         </div>
     </div>
 </div>
 
-<div id="weNeed">
-    <div class="row features">
-        <h2 style="margin-top:30px;" class="page-headline large text-center">Kogo poszukujemy</h2>
-        <div class="col-md-12">
-            <p class="lead">
-                Cały czas cierpimy na niedobory chętnych osób zajmujący się:
-            </p>
-            <div class="col-md-3"><div class="bg-primary"><h3>Programiści</h3><p>Java EE, AngularJS, PHP</p></div></div>
-            <div class="col-md-3"><div class="bg-primary"><h3>Architekci</h3><p>REST, SOA</p></div></div>
-            <div class="col-md-3"><div class="bg-primary"><h3>Administratorzy</h3><p>GlassFich, Nginx, MySql, Docker</p></div></div>
-            <div class="col-md-3"><div class="bg-primary"><h3>Wolontariusze</h3><p>Każdy może pomóc</p></div></div>
+<section class="slider">
+    <div class="container" id="weNeed">
+        <div class="row features">
+            <h2 style="margin-top:30px;" class="page-headline large text-center">Kogo poszukujemy</h2>
+            <div class="col-md-12">
+                <p class="lead">
+                    Cały czas cierpimy na niedobory chętnych osób zajmujący się:
+                </p>
+                <div class="col-md-3"><div class="bg-primary"><h3>Programiści</h3><p>Java EE, AngularJS, PHP</p></div></div>
+                <div class="col-md-3"><div class="bg-primary"><h3>Architekci</h3><p>REST, SOA</p></div></div>
+                <div class="col-md-3"><div class="bg-primary"><h3>Administratorzy</h3><p>GlassFich, Nginx, MySql, Docker</p></div></div>
+                <div class="col-md-3"><div class="bg-primary"><h3>Wolontariusze</h3><p>Każdy może pomóc</p></div></div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
 <section class="gray">
     <div class="container">
@@ -177,37 +195,37 @@
                                             <div class="item active">
                                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d1 animate_start">
                                                     <div class="item-inner"><a style="cursor: pointer;"><img
-                                                            src="images/logo-1.png" alt="Upportdash"></a></div>
+                                                            src="images/logo-0.png" alt="Upportdash"></a></div>
                                                 </div>
                                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d2 animate_start">
                                                     <div class="item-inner"><a style="cursor: pointer;"><img
-                                                            src="images/logo-2.png" alt="Upportdash"></a></div>
+                                                            src="images/logo-0.png" alt="Upportdash"></a></div>
                                                 </div>
                                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d3 animate_start">
                                                     <div class="item-inner"><a style="cursor: pointer;"><img
-                                                            src="images/logo-3.png" alt="Upportdash"></a></div>
+                                                            src="images/logo-0.png" alt="Upportdash"></a></div>
                                                 </div>
                                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item animate_afc d4 animate_start">
                                                     <div class="item-inner"><a style="cursor: pointer;"><img
-                                                            src="images/logo-4.png" alt="Upportdash"></a></div>
+                                                            src="images/logo-0.png" alt="Upportdash"></a></div>
                                                 </div>
                                             </div>
                                             <div class="item">
                                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
                                                     <div class="item-inner"><a style="cursor: pointer;"><img
-                                                            src="images/logo-5.png" alt="Upportdash"></a></div>
+                                                            src="images/logo-0.png" alt="Upportdash"></a></div>
                                                 </div>
                                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
                                                     <div class="item-inner"><a style="cursor: pointer;"><img
-                                                            src="images/logo-4.png" alt="Upportdash"></a></div>
+                                                            src="images/logo-0.png" alt="Upportdash"></a></div>
                                                 </div>
                                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
                                                     <div class="item-inner"><a style="cursor: pointer;"><img
-                                                            src="images/logo-3.png" alt="Upportdash"></a></div>
+                                                            src="images/logo-0.png" alt="Upportdash"></a></div>
                                                 </div>
                                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
                                                     <div class="item-inner"><a style="cursor: pointer;"><img
-                                                            src="images/logo-2.png" alt="Upportdash"></a></div>
+                                                            src="images/logo-0.png" alt="Upportdash"></a></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -216,7 +234,7 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                 <!-- Testimonials Widget Start -->
-                                <div class="row ">
+                                <!--<div class="row ">
                                     <div class="testimonials widget">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="testimonials-title">
@@ -307,7 +325,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div>
